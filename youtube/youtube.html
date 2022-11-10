@@ -11,67 +11,21 @@
     <script type="text/javascript" src="youtube.js"></script>
     <title>Youtube</title>
     <style>
-      .search-bar {
-        display: block;
-        width: 300px;
-        position: center;
-      }
-      .video-pre {
-        width: 300px;
-        border-radius: 5px;
-      }
-      .thumbnails {
-        display: inline-block;
-      }
-      .video-title {
-        font-size: 14px;
-        font-weight: 700;
-        line-height: 20px;
-        width: 250px;
-        color: black;
-        margin-bottom: 12px;
-      }
-      .video-auth {
-        color: rgb(96, 96, 96);
-        font-size: 14px;
-        font-weight: 500;
-        margin-bottom: 6px;
-      }
-      .video-stats {
-        font-size: 12px;
-        color: rgb(96, 96, 96);
-      }
-      .box-preview{
-        display: inline-block;
-        width: 20rem;
-        vertical-align: top;
-        margin-top: 20px;
-        margin-right: 10px;
-        margin-left: 10px;
-      }
-      .description{
-        display: inline-block;
-        width: 220px;
-      }
-      .channel-imgbox{
-        display: inline-block;
-        width: 50px;
-        vertical-align: top;
-        margin-top: 10px;
-      }
-      .channel-icon{
-        display: inline-block;
-        border-radius: 25px;
-        width: 100%;
-      }
-      .stats-box{
-        display: inline-block;
-        width: 200px;
-      }
+
     </style>
   </head>
   <body>
-    <input class="search-bar" type="text" placeholder="Search" />
+    <div class="searcbar-grid">
+      <div>
+        <h1 class="heading">Youtube</h1>
+      </div>
+      <div>
+        <input class="search-bar" type="text" placeholder="Search" />
+        <button class="search-button">Search</button>
+      </div>
+    </div>
+    <br>
+<div class="container">
 <div class="box-preview">
   <div class="thumbnails">
     <img
@@ -80,7 +34,7 @@
     alt="Thumbnail"
   />
   </div>
-  <div>
+  <div class="video-info-grid">
     <div class="channel-imgbox">
       <img class="channel-icon" src="/youtube/assets/channel-icon.jfif" alt="Code Bro">
     </div>
@@ -99,14 +53,14 @@
     alt="Thumbnail"
   />
   </div>
-  <div>
+  <div class="video-info-grid" >
     <div class="channel-imgbox">
-      <img class="channel-icon" src="/youtube/assets/channel-icon.jfif" alt="Code Bro">
+      <img class="channel-icon" src="/youtube/assets/icon-6.jpg" alt="Code Bro">
     </div>
     <div class="description">
-      <p class="video-title">JAVASCRIPT Full Course with advance knowledge</p>
-      <p class="video-auth">Code Bro</p>
-      <p class="video-stats">400K views &#183 8 months ago</p>
+      <p class="video-title">New Video Song 2022</p>
+      <p class="video-auth">Media</p>
+      <p class="video-stats">2.5M views &#183 11 months ago</p>
     </div>
   </div>
 </div>
@@ -118,14 +72,14 @@
     alt="Thumbnail"
   />
   </div>
-  <div>
+  <div class="video-info-grid">
     <div class="channel-imgbox">
-      <img class="channel-icon" src="/youtube/assets/channel-icon.jfif" alt="Code Bro">
+      <img class="channel-icon" src="/youtube/assets/icon-5.jpg" alt="Code Bro">
     </div>
     <div class="description">
-      <p class="video-title">JAVASCRIPT Full Course with advance knowledge</p>
-      <p class="video-auth">Code Bro</p>
-      <p class="video-stats">400K views &#183 8 months ago</p>
+      <p class="video-title">Harry Potter and The Philosopher's Stone Movie Explained In Bangla</p>
+      <p class="video-auth">Harry Potter</p>
+      <p class="video-stats">3.5M views &#183 1 year ago</p>
     </div>
   </div>
 </div>
@@ -137,13 +91,13 @@
     alt="Thumbnail"
   />
   </div>
-  <div>
+  <div class="video-info-grid">
     <div class="channel-imgbox">
-      <img class="channel-icon" src="/youtube/assets/channel-icon.jfif" alt="Code Bro">
+      <img class="channel-icon" src="/youtube/assets/icon-4.jpg" alt="Code Bro">
     </div>
     <div class="description">
-      <p class="video-title">JAVASCRIPT Full Course with advance knowledge</p>
-      <p class="video-auth">Code Bro</p>
+      <p class="video-title">Dictator's Dilemma (Full Episode) | North Korea: Inside the Mind of a Dictator</p>
+      <p class="video-auth">National Geographic</p>
       <p class="video-stats">400K views &#183 8 months ago</p>
     </div>
   </div>
@@ -156,14 +110,14 @@
     alt="Thumbnail"
   />
   </div>
-  <div>
+  <div class="video-info-grid">
     <div class="channel-imgbox">
-      <img class="channel-icon" src="/youtube/assets/channel-icon.jfif" alt="Code Bro">
+      <img class="channel-icon" src="/youtube/assets/icon-1.jpg" alt="Code Bro">
     </div>
     <div class="description">
-      <p class="video-title">JAVASCRIPT Full Course with advance knowledge</p>
-      <p class="video-auth">Code Bro</p>
-      <p class="video-stats">400K views &#183 8 months ago</p>
+      <p class="video-title">Story of a Freelancer Couple | WSDFM | Sujana & Shojib</p>
+      <p class="video-auth">CodersTrust Bangladesh</p>
+      <p class="video-stats">10K views &#183 1 year ago</p>
     </div>
   </div>
 </div>
@@ -175,7 +129,47 @@
     alt="Thumbnail"
   />
   </div>
-  <div>
+  <div class="video-info-grid">
+    <div class="channel-imgbox">
+      <img class="channel-icon" src="/youtube/assets/icon-3.jpg" alt="Code Bro">
+    </div>
+    <div class="description">
+      <p class="video-title">Official: 90's Romantic Songs | Bollywood Romantic Songs</p>
+      <p class="video-auth">T-Series</p>
+      <p class="video-stats">65M views &#183 8 years ago</p>
+    </div>
+  </div>
+</div>
+<div class="box-preview">
+  <div class="thumbnails">
+    <img
+    class="video-pre"
+    src="/youtube/assets/sddefault (6).jpg"
+    alt="Thumbnail"
+  />
+  </div>
+  <div class="video-info-grid">
+    <div class="channel-imgbox">
+      <img class="channel-icon" src="/youtube/assets/icon-2.jpg" alt="Code Bro">
+    </div>
+    <div class="description">
+      <p class="video-title">Chris Brown, Young Thug - Go Crazy [1 Hour]</p>
+      <p class="video-auth">Mood Music</p>
+      <p class="video-stats">353K views &#183 2 years ago</p>
+    </div>
+   </div>
+  </div>
+</div>
+<div class="container">
+<div class="box-preview">
+  <div class="thumbnails">
+    <img
+    class="video-pre"
+    src="/youtube/assets/sddefault.jpg"
+    alt="Thumbnail"
+  />
+  </div>
+  <div class="video-info-grid">
     <div class="channel-imgbox">
       <img class="channel-icon" src="/youtube/assets/channel-icon.jfif" alt="Code Bro">
     </div>
@@ -190,19 +184,115 @@
   <div class="thumbnails">
     <img
     class="video-pre"
+    src="/youtube/assets/sddefault (1).jpg"
+    alt="Thumbnail"
+  />
+  </div>
+  <div class="video-info-grid" >
+    <div class="channel-imgbox">
+      <img class="channel-icon" src="/youtube/assets/icon-6.jpg" alt="Code Bro">
+    </div>
+    <div class="description">
+      <p class="video-title">New Video Song 2022</p>
+      <p class="video-auth">Media</p>
+      <p class="video-stats">2.5M views &#183 11 months ago</p>
+    </div>
+  </div>
+</div>
+<div class="box-preview">
+  <div class="thumbnails">
+    <img
+    class="video-pre"
+    src="/youtube/assets/sddefault (2).jpg"
+    alt="Thumbnail"
+  />
+  </div>
+  <div class="video-info-grid">
+    <div class="channel-imgbox">
+      <img class="channel-icon" src="/youtube/assets/icon-5.jpg" alt="Code Bro">
+    </div>
+    <div class="description">
+      <p class="video-title">Harry Potter and The Philosopher's Stone Movie Explained In Bangla</p>
+      <p class="video-auth">Harry Potter</p>
+      <p class="video-stats">3.5M views &#183 1 year ago</p>
+    </div>
+  </div>
+</div>
+<div class="box-preview">
+  <div class="thumbnails">
+    <img
+    class="video-pre"
+    src="/youtube/assets/sddefault (3).jpg"
+    alt="Thumbnail"
+  />
+  </div>
+  <div class="video-info-grid">
+    <div class="channel-imgbox">
+      <img class="channel-icon" src="/youtube/assets/icon-4.jpg" alt="Code Bro">
+    </div>
+    <div class="description">
+      <p class="video-title">Dictator's Dilemma (Full Episode) | North Korea: Inside the Mind of a Dictator</p>
+      <p class="video-auth">National Geographic</p>
+      <p class="video-stats">400K views &#183 8 months ago</p>
+    </div>
+  </div>
+</div>
+<div class="box-preview">
+  <div class="thumbnails">
+    <img
+    class="video-pre"
+    src="/youtube/assets/sddefault (4).jpg"
+    alt="Thumbnail"
+  />
+  </div>
+  <div class="video-info-grid">
+    <div class="channel-imgbox">
+      <img class="channel-icon" src="/youtube/assets/icon-1.jpg" alt="Code Bro">
+    </div>
+    <div class="description">
+      <p class="video-title">Story of a Freelancer Couple | WSDFM | Sujana & Shojib</p>
+      <p class="video-auth">CodersTrust Bangladesh</p>
+      <p class="video-stats">10K views &#183 1 year ago</p>
+    </div>
+  </div>
+</div>
+<div class="box-preview">
+  <div class="thumbnails">
+    <img
+    class="video-pre"
+    src="/youtube/assets/sddefault (5).jpg"
+    alt="Thumbnail"
+  />
+  </div>
+  <div class="video-info-grid">
+    <div class="channel-imgbox">
+      <img class="channel-icon" src="/youtube/assets/icon-3.jpg" alt="Code Bro">
+    </div>
+    <div class="description">
+      <p class="video-title">Official: 90's Romantic Songs | Bollywood Romantic Songs</p>
+      <p class="video-auth">T-Series</p>
+      <p class="video-stats">65M views &#183 8 years ago</p>
+    </div>
+  </div>
+</div>
+<div class="box-preview">
+  <div class="thumbnails">
+    <img
+    class="video-pre"
     src="/youtube/assets/sddefault (6).jpg"
     alt="Thumbnail"
   />
   </div>
-  <div>
+  <div class="video-info-grid">
     <div class="channel-imgbox">
-      <img class="channel-icon" src="/youtube/assets/channel-icon.jfif" alt="Code Bro">
+      <img class="channel-icon" src="/youtube/assets/icon-2.jpg" alt="Code Bro">
     </div>
     <div class="description">
-      <p class="video-title">JAVASCRIPT Full Course with advance knowledge</p>
-      <p class="video-auth">Code Bro</p>
-      <p class="video-stats">400K views &#183 8 months ago</p>
+      <p class="video-title">Chris Brown, Young Thug - Go Crazy [1 Hour]</p>
+      <p class="video-auth">Mood Music</p>
+      <p class="video-stats">353K views &#183 2 years ago</p>
     </div>
+   </div>
   </div>
 </div>
   </body>
