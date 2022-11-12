@@ -24,21 +24,62 @@
         <input class="search-bar" type="text" placeholder="Search"/>
         <button class="search-button">
           <img class="search-icon" src="/youtube/assets/icons/search.svg" alt="">
+          <div class="tool-tip">Search</div>
         </button>
         <button class="voice-search-button">
           <img class="voice-icon" src="/youtube/assets/icons/voice-search-icon.svg" alt="">
+          <div class="tool-tip">Search using voice</div>
         </button>
       </div>
       <div class="right-sec">
-       <img class="upload-icon" src="/youtube/assets/icons/upload.svg" alt="Upload">
-       <img class="apps-icon" src="/youtube/assets/icons/youtube-apps.svg" alt="Apps">
-       <img class="notification-icon" src="/youtube/assets/icons/notifications.svg" alt="Notification">
-       <img class="current-user-picture" src="/youtube/assets/icons/icon-3.jpg" alt="Channel">
+        <div class="icon-container">
+          <img class="upload-icon" src="/youtube/assets/icons/upload.svg" alt="Upload">
+          <div class="tool-tip">Upload</div>
+        </div>
+        <div class="icon-container">
+          <img class="apps-icon" src="/youtube/assets/icons/youtube-apps.svg" alt="Apps">
+          <div class="tool-tip">Apps</div>
+        </div>
+       <div class="notificatoin-icon-container">
+        <div class="icon-container">
+          <img class="notification-icon" src="/youtube/assets/icons/notifications.svg" alt="Notification">
+          <div class="notifications-count">3</div>
+          <div class="tool-tip">Notifications</div>
+        </div>
+       </div>
+       <div class="icon-container">
+        <img class="current-user-picture" src="/youtube/assets/icons/icon-3.jpg" alt="Channel">
+        <div class="tool-tip">User</div>
+       </div>
       </div>
     </div>
     <div class="sidebar">
-      Sidebar
+      <div class="sidebar-link">
+        <img src="/youtube/assets/icons/home.svg" alt="Home">
+        <div class="sidebar-icon-name">Home</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="/youtube/assets/icons/explore.svg" alt="Explore">
+        <div class="sidebar-icon-name">Explore</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="/youtube/assets/icons/subscriptions.svg" alt="Subscription">
+        <div class="sidebar-icon-name">Subscription</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="/youtube/assets/icons/originals.svg" alt="Originals">
+        <div class="sidebar-icon-name">Originals</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="/youtube/assets/icons/youtube-music.svg" alt="Youtube Music">
+        <div class="sidebar-icon-name">Youtube Music</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="/youtube/assets/icons/library.svg" alt="Library">
+        <div class="sidebar-icon-name">Library</div>
+      </div>
     </div>
+
     <div class="container">
       <div class="box-preview">
         <div class="thumbnails">
@@ -47,10 +88,25 @@
           src="/youtube/assets/sddefault.jpg"
           alt="Thumbnail"
         />
+        <div class="video-time">
+          14:20
+        </div>
         </div>
         <div class="video-info-grid">
           <div class="channel-imgbox">
-            <img class="channel-icon" src="/youtube/assets/icons/icon-2.jpg" alt="Code Bro">
+            <div class="short-bar">
+              <img class="channel-icon" src="/youtube/assets/icons/icon-2.jpg" alt="Code Bro">
+              <div class="channel-tool-tips">
+              <div class="icon-tt">
+                <img class="channel-icon-tool" src="/youtube/assets/icons/icon-2.jpg" alt="Code Bro">
+              </div>
+              <div class="info-tool">
+                <p class="video-auth-tool">Code Bro</p>
+                <p class="subscriber-tool">5.3M subscribers</p>
+                <button class="sub-btn">Subscribe</button>
+              </div>
+              </div>
+          </div>
           </div>
           <div class="description">
             <p class="video-title">JAVASCRIPT Full Course with advance knowledge</p>
@@ -66,6 +122,9 @@
           src="/youtube/assets/sddefault (1).jpg"
           alt="Thumbnail"
         />
+        <div class="video-time">
+          4:50
+        </div>
         </div>
         <div class="video-info-grid" >
           <div class="channel-imgbox">
@@ -85,6 +144,9 @@
           src="/youtube/assets/sddefault (2).jpg"
           alt="Thumbnail"
         />
+        <div class="video-time">
+          1:40:20
+        </div>
         </div>
         <div class="video-info-grid">
           <div class="channel-imgbox">
@@ -104,6 +166,9 @@
           src="/youtube/assets/sddefault (3).jpg"
           alt="Thumbnail"
         />
+        <div class="video-time">
+          34:30
+        </div>
         </div>
         <div class="video-info-grid">
           <div class="channel-imgbox">
@@ -123,6 +188,9 @@
           src="/youtube/assets/sddefault (4).jpg"
           alt="Thumbnail"
         />
+        <div class="video-time">
+          10:25
+        </div>
         </div>
         <div class="video-info-grid">
           <div class="channel-imgbox">
@@ -142,6 +210,9 @@
           src="/youtube/assets/sddefault (5).jpg"
           alt="Thumbnail"
         />
+        <div class="video-time">
+          3:30
+        </div>
         </div>
         <div class="video-info-grid">
           <div class="channel-imgbox">
@@ -161,6 +232,9 @@
           src="/youtube/assets/sddefault (6).jpg"
           alt="Thumbnail"
         />
+        <div class="video-time">
+          2:15:20
+        </div>
         </div>
         <div class="video-info-grid">
           <div class="channel-imgbox">
