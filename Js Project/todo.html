@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="app.css" />
+    <script type="text/javascript" src="app.js"></script>
+    <title>ToDo LIST</title>
+  </head>
+  <body>
+    <button class="button-pressme">Press Me</button>
+    <button class="button-up">UP</button>
+    <button class="button-down">DOWN</button>
+    <script>
+      addToDo("Nzmaz Rakat");
+      function addToDo(toDoTitle) {
+        let element = document.createElement("div");
+        element.innerText = toDoTitle;
+        document.body.appendChild(element);
+      }
+      let todo = ["Morning", "Noon", "After noon", "Evening", "Night"];
+      todo.push("Dawn");
+      todo.pop();
+      todo.unshift("Dawn");
+
+       
+      const myList = todo.toString().toUpperCase().split(",");
+      console.log(myList);
+
+      addToDo("Fazar");
+      addToDo("Dohar");
+      addToDo("Asar");
+      addToDo("Magrib");
+      addToDo("Esha");
+      addToDo("Jumma");
+    </script>
+  </body>
+</html>

@@ -15,7 +15,7 @@
     <script type="text/javascript" src="youtube.js"></script>
     <title>Youtube</title>
   <body>
-    <div class="header">
+    <header class="header">
       <div  class="left-sec">
         <img class="ham-menu" src="/youtube/assets/icons/hamburger-menu.svg" alt="MENU">
         <img class="youtube-logo" src="/youtube/assets/icons/youtube-logo.svg" alt="YouTube">
@@ -52,8 +52,8 @@
         <div class="tool-tip">User</div>
        </div>
       </div>
-    </div>
-    <div class="sidebar">
+    </header>
+    <nav class="sidebar">
       <div class="sidebar-link">
         <img src="/youtube/assets/icons/home.svg" alt="Home">
         <div class="sidebar-icon-name">Home</div>
@@ -78,57 +78,69 @@
         <img src="/youtube/assets/icons/library.svg" alt="Library">
         <div class="sidebar-icon-name">Library</div>
       </div>
-    </div>
-
-    <div class="container">
-      <div class="box-preview">
-        <div class="thumbnails">
-          <img
-          class="video-pre"
-          src="/youtube/assets/sddefault.jpg"
-          alt="Thumbnail"
-        />
-        <div class="video-time">
-          14:20
+    </nav>
+    <main>
+      <section class="container">
+        <div class="box-preview">
+          <div class="thumbnails">
+            <img
+            class="video-pre"
+            src="/youtube/assets/sddefault.jpg"
+            alt="Thumbnail"
+            />
+            <div class="video-time">
+              14:20
+            </div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-imgbox">
+              <div class="short-bar">
+                <img class="channel-icon" src="/youtube/assets/icons/icon-2.jpg" alt="Code Bro">
+                <div class="channel-tool-tips">
+                <div class="icon-tt">
+                  <img class="channel-icon-tool" src="/youtube/assets/icons/icon-2.jpg" alt="Code Bro">
+                </div>
+                <div class="info-tool">
+                  <p class="video-auth-tool">Code Bro</p>
+                  <p class="subscriber-tool">900K subscribers</p>
+                  <button class="sub-btn">Subscribe</button>
+                </div>
+                </div>
+              </div>
+            </div>
+            <div class="description">
+              <p class="video-title">JAVASCRIPT Full Course with advance knowledge</p>
+              <p class="video-auth">Code Bro</p>
+              <p class="video-stats">400K views &#183 8 months ago</p>
+            </div>
+          </div>
         </div>
-        </div>
-        <div class="video-info-grid">
+        <div class="box-preview">
+          <div class="thumbnails">
+              <img
+                class="video-pre"
+                src="/youtube/assets/sddefault (1).jpg"
+                alt="Thumbnail"
+              />
+              <div class="video-time">
+                4:50
+              </div>
+          </div>
+        <div class="video-info-grid" >
           <div class="channel-imgbox">
             <div class="short-bar">
-              <img class="channel-icon" src="/youtube/assets/icons/icon-2.jpg" alt="Code Bro">
+              <img class="channel-icon" src="/youtube/assets/icons/icon-3.jpg" alt="Code Bro">
               <div class="channel-tool-tips">
               <div class="icon-tt">
-                <img class="channel-icon-tool" src="/youtube/assets/icons/icon-2.jpg" alt="Code Bro">
+                <img class="channel-icon-tool" src="/youtube/assets/icons/icon-3.jpg" alt="Code Bro">
               </div>
               <div class="info-tool">
-                <p class="video-auth-tool">Code Bro</p>
-                <p class="subscriber-tool">5.3M subscribers</p>
+                <p class="video-auth-tool">Media</p>
+                <p class="subscriber-tool">200K subscribers</p>
                 <button class="sub-btn">Subscribe</button>
               </div>
               </div>
-          </div>
-          </div>
-          <div class="description">
-            <p class="video-title">JAVASCRIPT Full Course with advance knowledge</p>
-            <p class="video-auth">Code Bro</p>
-            <p class="video-stats">400K views &#183 8 months ago</p>
-          </div>
-        </div>
-      </div>
-      <div class="box-preview">
-        <div class="thumbnails">
-          <img
-          class="video-pre"
-          src="/youtube/assets/sddefault (1).jpg"
-          alt="Thumbnail"
-        />
-        <div class="video-time">
-          4:50
-        </div>
-        </div>
-        <div class="video-info-grid" >
-          <div class="channel-imgbox">
-            <img class="channel-icon" src="/youtube/assets/icons/icon-1.jpg" alt="Code Bro">
+            </div>
           </div>
           <div class="description">
             <p class="video-title">New Video Song 2022</p>
@@ -143,14 +155,26 @@
           class="video-pre"
           src="/youtube/assets/sddefault (2).jpg"
           alt="Thumbnail"
-        />
-        <div class="video-time">
-          1:40:20
-        </div>
+          />
+          <div class="video-time">
+            1:40:20
+          </div>
         </div>
         <div class="video-info-grid">
           <div class="channel-imgbox">
-            <img class="channel-icon" src="/youtube/assets/icons/icon-4.jpg" alt="">
+            <div class="short-bar">
+              <img class="channel-icon" src="/youtube/assets/icons/icon-1.jpg" alt="Code Bro">
+              <div class="channel-tool-tips">
+              <div class="icon-tt">
+                <img class="channel-icon-tool" src="/youtube/assets/icons/icon-1.jpg" alt="Code Bro">
+              </div>
+              <div class="info-tool">
+                <p class="video-auth-tool">Harry Potter</p>
+                <p class="subscriber-tool">3M subscribers</p>
+                <button class="sub-btn">Subscribe</button>
+              </div>
+              </div>
+            </div>
           </div>
           <div class="description">
             <p class="video-title">Harry Potter and The Philosopher's Stone Movie Explained In Bangla</p>
@@ -161,18 +185,30 @@
       </div>
       <div class="box-preview">
         <div class="thumbnails">
-          <img
-          class="video-pre"
-          src="/youtube/assets/sddefault (3).jpg"
-          alt="Thumbnail"
-        />
-        <div class="video-time">
-          34:30
-        </div>
+            <img
+              class="video-pre"
+              src="/youtube/assets/sddefault (3).jpg"
+              alt="Thumbnail"
+            />
+            <div class="video-time">
+              34:30
+            </div>
         </div>
         <div class="video-info-grid">
           <div class="channel-imgbox">
-            <img class="channel-icon" src="/youtube/assets/icons/icon-5.jpg" alt="">
+            <div class="short-bar">
+              <img class="channel-icon" src="/youtube/assets/icons/icon-5.jpg" alt="Code Bro">
+              <div class="channel-tool-tips">
+              <div class="icon-tt">
+                <img class="channel-icon-tool" src="/youtube/assets/icons/icon-5.jpg" alt="Code Bro">
+              </div>
+              <div class="info-tool">
+                <p class="video-auth-tool">National Geographic</p>
+                <p class="subscriber-tool">8M subscribers</p>
+                <button class="sub-btn">Subscribe</button>
+              </div>
+              </div>
+            </div>
           </div>
           <div class="description">
             <p class="video-title">Dictator's Dilemma (Full Episode) | North Korea: Inside the Mind of a Dictator</p>
@@ -187,19 +223,99 @@
           class="video-pre"
           src="/youtube/assets/sddefault (4).jpg"
           alt="Thumbnail"
+          />
+          <div class="video-time">
+            10:25
+          </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="channel-imgbox">
+              <div class="short-bar">
+                <img class="channel-icon" src="/youtube/assets/icons/icon-4.jpg" alt="Code Bro">
+                <div class="channel-tool-tips">
+                <div class="icon-tt">
+                  <img class="channel-icon-tool" src="/youtube/assets/icons/icon-4.jpg" alt="Code Bro">
+                </div>
+                <div class="info-tool">
+                  <p class="video-auth-tool">CodersTrust</p>
+                  <p class="subscriber-tool">53M subscribers</p>
+                  <button class="sub-btn">Subscribe</button>
+                </div>
+                </div>
+              </div>            
+            </div>
+            <div class="description">
+              <p class="video-title">Story of a Freelancer Couple | WSDFM | Sujana & Shojib</p>
+              <p class="video-auth">CodersTrust Bangladesh</p>
+              <p class="video-stats">10K views &#183 1 year ago</p>
+            </div>
+        </div>
+      </div>
+      <div class="box-preview">
+        <div class="thumbnails">
+          <img
+          class="video-pre"
+          src="/youtube/assets/sddefault (5).jpg"
+          alt="Thumbnail"
         />
         <div class="video-time">
-          10:25
+          3:30
         </div>
         </div>
         <div class="video-info-grid">
           <div class="channel-imgbox">
-            <img class="channel-icon" src="/youtube/assets/icons/icon-6.jpg" alt="Code Bro">
+            <div class="short-bar">
+              <img class="channel-icon" src="/youtube/assets/icons/icon-3.jpg" alt="Code Bro">
+              <div class="channel-tool-tips">
+              <div class="icon-tt">
+                <img class="channel-icon-tool" src="/youtube/assets/icons/icon-3.jpg" alt="Code Bro">
+              </div>
+              <div class="info-tool">
+                <p class="video-auth-tool">T-Series</p>
+                <p class="subscriber-tool">3B subscribers</p>
+                <button class="sub-btn">Subscribe</button>
+              </div>
+              </div>
+            </div>
           </div>
           <div class="description">
-            <p class="video-title">Story of a Freelancer Couple | WSDFM | Sujana & Shojib</p>
-            <p class="video-auth">CodersTrust Bangladesh</p>
-            <p class="video-stats">10K views &#183 1 year ago</p>
+            <p class="video-title">Official: 90's Romantic Songs | Bollywood Romantic Songs</p>
+            <p class="video-auth">T-Series</p>
+            <p class="video-stats">65M views &#183 8 years ago</p>
+          </div>
+        </div>
+      </div>
+      <div class="box-preview">
+        <div class="thumbnails">
+          <img
+          class="video-pre"
+          src="/youtube/assets/sddefault (6).jpg"
+          alt="Thumbnail"
+          />
+        <div class="video-time">
+          2:15:20
+        </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-imgbox">
+            <div class="short-bar">
+              <img class="channel-icon" src="/youtube/assets/icons/icon-1.jpg" alt="Code Bro">
+              <div class="channel-tool-tips">
+              <div class="icon-tt">
+                <img class="channel-icon-tool" src="/youtube/assets/icons/icon-1.jpg" alt="Code Bro">
+              </div>
+              <div class="info-tool">
+                <p class="video-auth-tool">Mood Music</p>
+                <p class="subscriber-tool">1.5M subscribers</p>
+                <button class="sub-btn">Subscribe</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="description">
+            <p class="video-title">Chris Brown, Young Thug - Go Crazy [1 Hour]</p>
+            <p class="video-auth">Mood Music</p>
+            <p class="video-stats">353K views &#183 2 years ago</p>
           </div>
         </div>
       </div>
@@ -216,7 +332,19 @@
         </div>
         <div class="video-info-grid">
           <div class="channel-imgbox">
-            <img class="channel-icon" src="/youtube/assets/icons/icon-3.jpg" alt="Code Bro">
+            <div class="short-bar">
+              <img class="channel-icon" src="/youtube/assets/icons/icon-3.jpg" alt="Code Bro">
+              <div class="channel-tool-tips">
+              <div class="icon-tt">
+                <img class="channel-icon-tool" src="/youtube/assets/icons/icon-3.jpg" alt="Code Bro">
+              </div>
+              <div class="info-tool">
+                <p class="video-auth-tool">T-Series</p>
+                <p class="subscriber-tool">3B subscribers</p>
+                <button class="sub-btn">Subscribe</button>
+              </div>
+              </div>
+            </div>
           </div>
           <div class="description">
             <p class="video-title">Official: 90's Romantic Songs | Bollywood Romantic Songs</p>
@@ -229,24 +357,37 @@
         <div class="thumbnails">
           <img
           class="video-pre"
-          src="/youtube/assets/sddefault (6).jpg"
+          src="/youtube/assets/sddefault (5).jpg"
           alt="Thumbnail"
         />
         <div class="video-time">
-          2:15:20
+          3:30
         </div>
         </div>
         <div class="video-info-grid">
           <div class="channel-imgbox">
-            <img class="channel-icon" src="/youtube/assets/icons/icon-4.jpg" alt="Code Bro">
+            <div class="short-bar">
+              <img class="channel-icon" src="/youtube/assets/icons/icon-3.jpg" alt="Code Bro">
+              <div class="channel-tool-tips">
+              <div class="icon-tt">
+                <img class="channel-icon-tool" src="/youtube/assets/icons/icon-3.jpg" alt="Code Bro">
+              </div>
+              <div class="info-tool">
+                <p class="video-auth-tool">T-Series</p>
+                <p class="subscriber-tool">3B subscribers</p>
+                <button class="sub-btn">Subscribe</button>
+              </div>
+              </div>
+            </div>
           </div>
           <div class="description">
-            <p class="video-title">Chris Brown, Young Thug - Go Crazy [1 Hour]</p>
-            <p class="video-auth">Mood Music</p>
-            <p class="video-stats">353K views &#183 2 years ago</p>
+            <p class="video-title">Official: 90's Romantic Songs | Bollywood Romantic Songs</p>
+            <p class="video-auth">T-Series</p>
+            <p class="video-stats">65M views &#183 8 years ago</p>
           </div>
         </div>
       </div>
-  </div>
+    </section>
+  </main>
   </body>
 </html>
