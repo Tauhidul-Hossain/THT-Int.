@@ -6,34 +6,126 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="app.css" />
     <script type="text/javascript" src="app.js"></script>
-    <title>ToDo LIST</title>
+    <title>Todo App</title>
   </head>
   <body>
-    <button class="button-pressme">Press Me</button>
-    <button class="button-up">UP</button>
-    <button class="button-down">DOWN</button>
+    <div style="font-weight: bold; font-size: 40px; color: orangered">
+      My Todo List
+    </div>
+    <input id="new-todo-item" type="text" />
+    <input type="date" id="date-seter" />
+    <button class="button-pressme" , onclick="addToDo();" ;>
+      Add Todo Item
+    </button>
+
+    <div id="todo-list"></div>
     <script>
-      addToDo("Nzmaz Rakat");
-      function addToDo(toDoTitle) {
-        let element = document.createElement("div");
-        element.innerText = toDoTitle;
-        document.body.appendChild(element);
+      document.title = "My Todo App";
+      //Model
+      //if localstorage exist use that
+      //Other wise use deafult
+      let todo;
+      const savedTodo = JSON.parse(localStorage.getItem("todo"));
+      if (Array.isArray(savedTodo)) {
+        todo = savedTodo;
+      } else {
+        todo = [
+          {
+            item: "Fazar",
+            dueDate: "2022-15-11",
+            id: "id1",
+          },
+          {
+            item: "Duhar",
+            dueDate: "2022-15-11",
+            id: "id2",
+          },
+          {
+            item: "Asar",
+            dueDate: "2022-15-11",
+            id: "id3",
+          },
+          {
+            item: "Magrib",
+            dueDate: "2022-15-11",
+            id: "id4",
+          },
+          {
+            item: "Esha",
+            dueDate: "2022-15-11",
+            id: "id5",
+          },
+        ];
       }
-      let todo = ["Morning", "Noon", "After noon", "Evening", "Night"];
-      todo.push("Dawn");
-      todo.pop();
-      todo.unshift("Dawn");
 
-       
-      const myList = todo.toString().toUpperCase().split(",");
-      console.log(myList);
+      //Create a Todo
+      function createToDo(item, dueDate) {
+        const id = "" + new Date().getTime();
 
-      addToDo("Fazar");
-      addToDo("Dohar");
-      addToDo("Asar");
-      addToDo("Magrib");
-      addToDo("Esha");
-      addToDo("Jumma");
+        todo.push({
+          item: item,
+          dueDate: dueDate,
+          id: id,
+        });
+        saveToDo();
+      }
+
+      function removeToDo(idToDelete) {
+        todo = todo.filter(function (todo) {
+          if (todo.id === idToDelete) {
+            return false;
+          } else {
+            return true;
+          }
+        });
+        saveToDo();
+      }
+      function saveToDo() {
+        localStorage.setItem("todo", JSON.stringify(todo));
+      }
+      // End of Model
+
+      // Control
+      function addToDo() {
+        const textbox = document.getElementById("new-todo-item");
+        const item = textbox.value;
+
+        const dateSeter = document.getElementById("date-seter");
+        const dueDate = dateSeter.value;
+
+        createToDo(item, dueDate);
+        render();
+      }
+
+      function deletToDo(event) {
+        const deletButton = event.target;
+        const idToDelete = deletButton.id;
+        removeToDo(idToDelete);
+        render();
+      }
+      //End Of Control
+      //View
+      function render() {
+        // Reset List
+        document.getElementById("todo-list").innerHTML = "";
+
+        todo.forEach(function (todo) {
+          const element = document.createElement("div");
+          element.innerText = todo.item + " " + todo.dueDate;
+
+          const deletButton = document.createElement("button");
+          deletButton.innerText = "Delete";
+          deletButton.style = "margin:14px";
+          deletButton.onclick = deletToDo;
+          deletButton.id = todo.id;
+          element.appendChild(deletButton);
+
+          const todoList = document.getElementById("todo-list");
+          todoList.appendChild(element);
+        });
+      }
+      render();
+      //End of View
     </script>
   </body>
 </html>
