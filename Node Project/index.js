@@ -1,63 +1,34 @@
-const fs = require('fs');
-const http = require('http');
+const mysql = require('mysql')
 
-const server = http.createServer((req, res) => {
-   if (req.url == '/'){
-    fs.exists('demo.txt', (result) => {
-        if (result) {
-            res.end('Exist')
-            }
-       else {
-            res.end('Not Exist')
-            }
-    });
-    
-   }
+
+const dataBaseConnectionConfig = {
+    host: 'localhost',
+    user: 'root',
+    password: '',
+    database:'my_app'
+};
+
+const con = mysql.createConnection(dataBaseConnectionConfig);
+
+con.connect((error) =>{
+    if (error){
+        console.log("Data base connection fail")
+    }
+    else{
+        console.log("Sucecssfuly connected with database");
+        dataInsert(con);
+    }
 });
-server.listen(4040);
-console.log('Working Succesfully');
 
-// let error = fs.writeFileSync('demo_one.txt', 'Hello World of Sync');
 
-// if (error) {
-//     res.writeHead(200, { 'Content-Type': 'text/html' });
-//     res.write('Fail Write File');
-//     res.end();
-// } else {
-//     res.writeHead(200, { 'Content-Type': 'text/html' });
-//     res.write('File Write Succes.');
-//     res.end();
-// }
-// 
-// const fs = require('fs');
-// const http = require('http');
-
-// const server = http.createServer((req, res) => {
-//     if (req.url === '/') {
-//     let error = fs.unlinkSync('demo.txt')
-//     if (error) {
-//         res.writeHead(200, { 'Content-Type': 'text/html' });
-//         res.write('Fail Delete File');
-//         res.end();
-//     } else {
-//         res.writeHead(200, { 'Content-Type': 'text/html' });
-//         res.write('File Delete Success.');
-//         res.end();
-//     }
-// }
-// });
-// server.listen(4040);
-// console.log('Working Succesfully');
-
-// if (req.url === '/') {
-//     let error = fs.unlinkSync('demo.txt');
-//     if (error) {
-//         res.writeHead(200, { 'Content-Type': 'text/html' });
-//         res.write('Fail Delete File');
-//         res.end();
-//     } else {
-//         res.writeHead(200, { 'Content-Type': 'text/html' });
-//         res.write('File Delete Success.');
-//         res.end();
-//     };
-// }
+const dataInsert = (con)=>{
+    let sqlQuery = "INSERT INTO `user_list`(`full_name`, `user_name`, `email`, `phone_no`, `birth_date`, `address`, `city`, `country`) VALUES ('Tauhidul Hossain Tanmoy','tanmoy','tauhidulhossaintanmoy@gmail.com','+8801868538686','01/12/1999','Shibgonj, Rupgonj, Narayangonj','Dhaka','Bangladesh')"
+    con.query(sqlQuery, (error) => {
+        if (error){
+            console.log("Insertation fail");
+        }
+        else{
+            console.log("Insertation Success")
+        }
+    })
+};
